@@ -35,7 +35,7 @@
 #ifndef ROS_STM32_HARDWARE_H_
 #define ROS_STM32_HARDWARE_H_
 
-#define STM32F3xx  // Change for your device
+#define STM32F4xx  // Change for your device
 #ifdef STM32F3xx
 #include "stm32f3xx_hal.h"
 #include "stm32f3xx_hal_uart.h"
@@ -48,6 +48,10 @@
 #include "stm32f7xx_hal.h"
 #include "stm32f7xx_hal_uart.h"
 #endif /* STM32F7xx */
+#ifdef STM32F4xx
+#include "stm32f4xx_hal.h"
+#include "stm32f4xx_hal_uart.h"
+#endif /* STM32F4xx */
 
 extern UART_HandleTypeDef huart2;
 
