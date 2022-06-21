@@ -48,10 +48,6 @@
 #include "stm32f7xx_hal.h"
 #include "stm32f7xx_hal_uart.h"
 #endif /* STM32F7xx */
-#ifdef STM32F4xx
-#include "stm32f4xx_hal.h"
-#include "stm32f4xx_hal_uart.h"
-#endif /* STM32F4xx */
 
 extern UART_HandleTypeDef huart2;
 
